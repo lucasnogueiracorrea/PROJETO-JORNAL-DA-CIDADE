@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+/*reset padrao*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*configurando cabeçalho:
+largura de 100% da tela;
+altura de 230px;
+imagem de fundo;*/
+.cabecalho{
+    width: 100%;
+    height: 230px;
+    background-image: url(../img/fundo.png);
+}
+
+/*configurando logo marca:
+posicao relativa;
+espacamento topo de 25px;
+espacamento esquerda de 300px;*/
+.logo-marca{
+    position: relative;
+    top: 25px;
+    margin-left: 300px;
+}
+
+/*configurando imagem detalhe:
+posicao relativa;
+espacamento esquerda de 950px;
+espacamento de baixo 70px;*/
+.imagem-detalhe{
+    position: relative;
+    margin-left: 950px;
+    bottom: 70px;
+}
+
+/*configurando menu/lista:
+colocando os itens da lista um ao lado do outro;
+removendo conf de lista;
+posicao relativa;
+espacamento de baixo de 140px;
+espacamento esquerda de 300px;*/
+.menu{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    position: relative;
+    bottom: 140px;
+    margin-left: 300px;
+}
+
+/*configurando itens do menu:
+definindo cor de fundo;
+espacamento dentro da caixa de 15 e 25px;
+cursor apontando;*/
+.menu-item{
+    background-color: red;
+    padding: 13px 23px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+/*configurando itens do menu:
+transicao de cor ao passar o mouse em cima dos itens*/
+.menu-item:hover{
+    background-color: rgb(173, 4, 4);
+}
+
+/*configurando os links dos itens do menu:
+removendo decoracao do texto;
+definindo cor das letras para branco*/
+.menu-item > a{
+    text-decoration: none;
+    color: white;
+}
+
+/*configurando pagina selecionada/marcada:
+definindo cor de fundo vermelha*/
+.page-marcada{
+    background-color:rgb(173, 4, 4);
+}
+
+/*-------------------------------------------------------------------------
+Configuração conteudo principal 
+--------------------------------------------------------------------------*/
+.conteudo-principal{
+    position: relative;
+    margin-left: 310px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.box-left{
+    width: 180px;
+    height: 555px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.entrevistas > h2{
+    background-color: rgb(41, 76, 113);
+    color: white;
+    padding: 5px;
+    font-size: 22px;
+}
+
+.entrevistas > ul{
+    list-style: none;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.275);
+}
+
+.entrevistas > ul > li{
+    padding: 13px 20px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.entrevistas > ul > li:hover{
+    background-color: rgba(41, 76, 113, 0.401);
+    font-size: 16.5px;
+}
+
+.entrevistas > ul > li > a{
+    text-decoration: none;
+    color: black;
+}
+
+.news > h2{
+    background-color: rgb(41, 76, 113);
+    color: white;
+    margin-top: 60px;
+    padding: 5px;
+    font-size: 22px;
+}
+
+.news > label{
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    padding-left: 2px;
+}
+
+.news > input{
+    padding: 8px;
+    width: 180px;
+}
+
+.news > button{
+    width: 180px;
+    padding: 5px;
+    background-color: red;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+}
+
+.news > button:hover{
+   background-color: rgb(173, 4, 4);
+}
+
+.box-center{
+    width: 350px;
+    margin-left: 50px;
+}
+
+.artigo-principal > img{
+    width: 350px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.275);
+}
+
+.artigo-principal > h2{
+    background-color: rgb(41, 76, 113);
+    color: white;
+    padding: 5px;
+    font-size: 22px;
+}
+
+.artigo-principal > h3{
+    margin-top: 15px;
+    background-color:rgb(173, 4, 4);
+    text-transform: uppercase;
+    color: white;
+    padding-left: 5px;
+}
+
+.artigo-principal > p{
+    font-size: 18px;
+    margin: 5px 0px;
+}
+
+.conteudo-secundario > h2{
+    background-color: rgb(41, 76, 113);
+    color: white;
+    margin-top: 30px;
+    padding: 5px;
+    font-size: 22px;
+}
+
+.artigos{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    border-bottom: 1px solid rgb(205, 203, 203);
+    padding: 10px;
+}
+
+.artigos > img{
+    width: 100px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.275);
+}
+
+.text-artigos > h4{
+    padding-left: 15px;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: rgb(69, 133, 202);;
+}
+
+.text-artigos > p{
+    padding-left: 7px;
+    padding-top: 5px;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.box-right{
+    width: 350px;
+    margin-left: 50px;
+}
+
+footer{
+    margin-top: 150px;
+    background-color: rgb(41, 76, 113);
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    text-align: center;
+}
